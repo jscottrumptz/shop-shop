@@ -27,8 +27,10 @@ const StoreProvider = ({ value = [], ...props }) => {
     // an action object passed in as its argument.
     const [state, dispatch] = useProductReducer({
       products: [],
+      cart: [],
+      cartOpen: false,
       categories: [],
-      currentCategory: '',
+      currentCategory: ''
     });
     // use this to confirm it works!
     console.log(state);
